@@ -18,7 +18,6 @@ public class ProdutoFacade {
         return instancia;
     }
 
-    // Método para criar um produto individual e adicioná-lo à instância única
     public void criarProduto(String nome, String categoria, double preco) {
         Produto produtoManager = Produto.getInstanciaUnica();
         produtoManager.adicionarProduto(nome, categoria, preco);
